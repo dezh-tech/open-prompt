@@ -1,0 +1,46 @@
+{
+  // Prompt name
+  "name": "Example Agent",
+
+  // A short description of what the prompt is about
+  "description": "Example Description",
+
+  // Version of the prompt (semantic versioning 2.0.0 spec)
+  "promptVersion": "1.0.0",
+
+  // Open prompt standard version
+  "opVersion": "v1",
+
+  // A list of LLM model names that can be used
+  "models": [
+    "MODEL NAME HERE"
+  ],
+
+  // Source files: prompt text and documentation
+  "source": {
+    "prompt": "v1.txt",
+    "doc": "v1.md"
+  },
+
+  // Sampling parameters to guide LLM behavior
+  "sampling": {
+    "temp": 0.5,        // Temperature: randomness level
+    "topK": 15,         // Top-K sampling: restricts to top K tokens
+    "topP": 0.3         // Top-P (nucleus) sampling: restricts to top P probability mass
+  },
+
+  // Controls the output format and behavior
+  "outputControl": {
+    "maxTokens": 1,              // Max tokens in the output
+    "stopSeq": "###",            // Sequence that stops generation
+    "repetitionPenalty": 1,      // Penalize repeating words
+    "frequencyPenalty": 1,       // Penalize frequent words
+    "presencePenalty": 1,        // Penalize previously mentioned words
+    "structure": "plain"         // Output format type
+  },
+
+  // Replaceable variables used in the prompt
+  "variables": {
+    "VAR1": "variable exact value goes here"  // Example variable
+  }
+}
