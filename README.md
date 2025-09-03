@@ -1,3 +1,6 @@
+>[!NOTE]
+> We may still use it internally, but we no more support updates to this repo and this is archived now.
+
 # Open Prompt
 
 Open prompt is a simple standard to how we can write and manage AI agent prompts while we update and change them.
